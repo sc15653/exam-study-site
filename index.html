@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Study Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Exam Study Helper</h1>
+    <p>Search a topic and get a study guide, key points, and practice questions.</p>
+  </header>
+
+  <main class="container">
+    <section class="search-box">
+      <label for="topicInput">What do you want to study?</label>
+      <input
+        type="text"
+        id="topicInput"
+        placeholder="Example: python classes"
+      />
+      <button id="searchBtn">Generate Study Guide</button>
+    </section>
+
+    <section id="resultSection" class="result hidden">
+      <h2 id="topicTitle">Topic</h2>
+
+      <div class="card">
+        <h3>Explanation</h3>
+        <p id="explanationText"></p>
+      </div>
+
+      <div class="card">
+        <h3>Key Points</h3>
+        <ul id="keyPointsList"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Example Questions</h3>
+        <ul id="questionsList"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Coding Practice</h3>
+        <ul id="codingTasksList"></ul>
+      </div>
+    </section>
+
+    <section id="emptyMessage" class="empty-message">
+      <p>Enter a topic above to start studying.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
